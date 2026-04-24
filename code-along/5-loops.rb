@@ -28,3 +28,11 @@ loop do
   puts "#{taco} tacos!"
   index += 1 
 end
+
+puts "========="
+
+for flavor in tacos # creating a temporary auto-incremental variable that will loop through the data
+  puts "#{flavor} tacos!"
+end
+puts "========"
+puts flavor
