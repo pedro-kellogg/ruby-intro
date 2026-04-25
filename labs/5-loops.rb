@@ -37,14 +37,12 @@ end
 # Deal a poker hand. Shuffle the deck and "deal" (i.e. display) a 5 card hand (i.e. 5 cards from the deck).
 # You will want to look at the documentation for Arrays: https://ruby-doc.org/core-2.7.0/Array.html
 puts "======="
-hand = []
 index = 0
-loop do
-  if index < 5
-    rank = ranks[rand(0..ranks.length)]
-    suit = suits[rand(0..suits.length)]
-    puts "#{rank} of #{suit}"
-    index += 1
-    break
-  end
+
+hand_size = 5
+
+for i in 1..hand_size
+  rank = ranks[rand(ranks.length)]
+  suit = suits[rand(suits.length)]
+  puts "#{rank} of #{suit}"
 end
